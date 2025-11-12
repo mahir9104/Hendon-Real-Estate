@@ -1,0 +1,944 @@
+:root {
+  --bg-light: #fff;
+  --bg-dark: #000;
+  --text-light: #fff;
+  --text-dark: #000;
+  --text-gray: #a5a5a5;
+  --accent: #c28562;
+  --accent-light: #c2856261;
+  --bg-footer: #19130b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  letter-spacing: 4px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ***************   hero section  ****************/
+
+
+
+.navbar {
+  background-color: var(--bg-light);
+
+}
+
+.navbar-brand img {
+  width: 25%;
+  filter: brightness(0%);
+
+}
+
+
+.hero-border {
+
+  width: 100%;
+  height: 87.3%;
+}
+
+.h-border {
+  outline: 2px solid var(--accent);
+  width: 95%;
+  height: 95%;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.nav-link.active {
+  color: var(--accent) !important;
+}
+
+.nav-link {
+  color: var(--text-dark);
+  position: relative;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  font-family: "Raleway", sans-serif;
+  font-size: small;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 6px;
+}
+
+
+.nav-link.active {
+  color: var(--accent) !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent);
+  transition: 0.5s ease;
+
+}
+
+
+
+.slide-1 {
+  height: 100vh;
+  background-image: url(images/hero/right-slide-1.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.slide-2 {
+  background-image: url(images/hero/slide-2.jpg);
+  height: 100vh;
+   background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.slide-3 {
+  background-image: url(images/hero/slide-3.jpg);
+  height: 100vh;
+   background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+
+.slide .container {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.slide-btn {
+  width: 40%;
+  height: 7vh;
+  border: 1px solid var(--accent);
+}
+
+.slide-btn button {
+  text-transform: uppercase;
+  width: 95%;
+  height: 5.5vh;
+  border: 1px solid var(--accent-light);
+  background-color: transparent;
+  color: var(--accent);
+  font-size: small;
+}
+
+.slide-btn button:hover {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+
+.slide h1 {
+  color: var(--accent);
+  font-size: 2.5em;
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 900;   
+}
+
+
+
+
+
+/* *************** showcase section  *************** */
+
+.s-c-head h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.3em;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+
+.s-c-head p {
+  color: var(--accent);
+  font-family: "Raleway", sans-serif;
+}
+
+.s-c-head-btn button {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 12.5%;
+  height: 6.5vh;
+  margin-left: 1.5rem;
+
+
+}
+
+.s-c-right{
+  width: 100%;
+}
+.s-c-right-main img{
+   width: 80%;
+}
+.s-c-right-bg img{
+  width: 80%;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+
+.s-c-head-btn img {
+  width: 40px;
+  transform: rotate(-45deg);
+  margin-left: -2.5rem;
+  transition: all 1s;
+
+}
+.s-c-right:hover .s-c-right-bg img{
+  transform: translatex(10%);
+}
+.s-c-head-btn:hover img {
+  margin-left: 15rem;
+  transform: rotate(135deg);
+}
+
+
+
+
+
+.numbers {
+  background-image: url(images/bg/bg-light.jpg);
+
+}
+
+.numbers h2 {
+  font-size: 8em;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--accent-light);
+}
+
+.numbers p {
+  letter-spacing: 6px;
+  font-family: "Raleway", sans-serif;
+}
+
+
+/* *************** residence section  *************** */
+.residence img {
+  height: 40vh;
+  object-fit: cover;
+  outline: 2px dotted var(--accent);
+}
+
+.play-btn {
+  width: 5rem;
+  height: 5rem;
+
+  background-color: var(--bg-light);
+}
+
+.play-btn-outline {
+  width: 90%;
+  height: 90%;
+  border: 2px solid var(--accent-light);
+  border-radius: 50%;
+}
+
+.residence h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+}
+
+.residence p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent);
+  line-height: 1.7em;
+}
+
+.feuters h6 {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 1px;
+
+}
+
+.schedule {
+  background-image: url(images/bg/bg-accent.jpg);
+  min-height: 95vh;
+}
+
+.schedule h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.8em;
+  color: var(--text-light);
+}
+
+.schedule p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  width: 80%;
+  line-height: 1.7em;
+}
+
+.schedule-btn {
+  background-color: var(--bg-light);
+  width: 50%;
+  height: 7vh;
+}
+
+
+.btn-outline {
+  width: 95%;
+  height: 80%;
+  border: 1px solid var(--accent-light);
+}
+
+.btn-outline button {
+  border: none;
+  background-color: transparent;
+  color: var(--accent);
+  font-size: small;
+}
+
+.facility {
+  background-image: url(images/bg/bg-light.jpg);
+  min-height: 100vh;
+}
+
+.fac-icon {
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid var(--accent);
+  font-size: 2.6em;
+
+}
+
+.fac-icon i {
+  margin-top: -.8rem;
+}
+
+.fac-contain h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-dark);
+}
+
+.fac-contain p {
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+
+
+
+/* *************** apartment section  *************** */
+.apartment-head h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.7em;
+  color: var(--text-dark);
+}
+
+.apartment-head p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: small;
+}
+
+.apartment-card h4 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-dark);
+}
+
+.apartment-btn {
+  width: 50%;
+  height: 7vh;
+  border: 1px solid var(--accent);
+}
+
+.apartment-btn button {
+  text-transform: uppercase;
+  width: 95%;
+  height: 5.5vh;
+ border: none;
+  background-color: transparent;
+  color: var(--accent);
+  font-size: small;
+}
+.apartment-btn button:hover {
+   border: 1px solid var(--accent);
+} 
+
+.plan-head h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.7em;
+  color: var(--text-dark);
+}
+
+.plan-head p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: small;
+}
+
+.plan-left {
+  width: 70%;
+  height: 56vh;
+  background-image: url(images/bg/bg-light.jpg);
+}
+
+.plan-left-contain h6 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  color: var(--text-dark);
+  position: relative;
+  display: inline-block;
+  /* important */
+  cursor: pointer;
+}
+
+.plan-left-contain h6::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--bg-dark);
+  /* line color */
+  transition: width 0.4s ease;
+}
+
+.plan-left-contain h6:hover::after {
+  width: 100%;
+}
+
+.plan-center img {
+  width: 75%;
+}
+
+.pl-head h5 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: small;
+
+}
+
+.pl-hr {
+  width: 75%;
+  height: 1px;
+  background-color: var(--accent-light);
+}
+
+.plan-footer p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  font-size: small;
+}
+
+.apartment-featuers {
+
+  background-image: url(images/bg/bg-accent.jpg);
+}
+
+.ap-icon {
+  height: 45vh;
+  border: 1px solid var(--bg-light);
+}
+
+.ap-icon:hover {
+  background-color: #d2a89052;
+}
+
+.ap-icon i {
+  font-size: 3em;
+}
+
+.ap-icon h4 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.blog {
+  background-color: var(--bg-dark);
+}
+
+.blog h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-light);
+  text-transform: uppercase;
+  font-size: 2em;
+  width: 90%;
+}
+
+.blog p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: small;
+}
+
+.blog-card h4 {
+  color: var(--accent);
+  font-family: "Raleway", sans-serif;
+  font-size: small;
+  background-color: var(--bg-dark);
+  width: 42vw;
+  height: 5vh;
+}
+
+.blog-card-footer h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.blog-card-footer p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: small;
+}
+
+.blog img:hover {
+  transform: translateX(-10px);
+}
+
+
+/* *************** visit section  *************** */
+
+.visit {
+  background-image: url(images/req/req-bg.jpg);
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.testimonials {
+  background-image: url(images/bg/bg-light.jpg);
+
+}
+
+.visit-slide h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.visit-slide h4 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: medium;
+}
+
+.visit-slide h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.visit-slide p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: small;
+}
+
+.req-form {
+  background-image: url(images/bg/bg-light.jpg);
+  transform: translateY(20rem);
+
+}
+
+.visit h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  font-size: 2.6em;
+  width: 60%;
+}
+
+.form-input input {
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--bg-dark);
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  outline: none;
+}
+
+.form-ta textarea {
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--bg-dark);
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  outline: none;
+}
+
+input[type="date"] {
+  color: #0c0c0c9d;
+}
+
+.req-logo {
+  margin-top: 25rem;
+}
+
+.req-logo p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  color: var(--accent);
+}
+
+.footer {
+  background-color: var(--bg-footer);
+}
+
+.footer h3 {
+  color: var(--text-light);
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+}
+
+.footer h4 {
+  color: rgb(187, 182, 182);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+
+.footer h5 {
+  font-family: "Cormorant Garamond", serif;
+  color: rgb(187, 182, 182);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.footer span {
+  color: var(--accent);
+}
+
+.form-input-f input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(187, 182, 182);
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  outline: none;
+}
+.copyright {
+  border-top: 1px solid var(--text-gray);
+}
+.copyright h6{
+  color: var(--text-gray);
+  font-family: "Raleway", sans-serif;
+  font-size: small;
+  text-transform: uppercase;
+
+}
+.copyright p{
+   color: var(--text-gray);
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+}
+.top-btn{
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--text-gray);
+}
+
+.footer-top-btn{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+
+@media(min-width : 768px) {
+
+  .slide-btn {
+    width: 30%;
+
+  }
+
+  .s-c-head h1 {
+    font-size: 3em;
+  }
+
+  .s-c-right-bg img {
+    transform: translateX(0%);
+    height: 70vh;
+    min-width: min-content;
+
+  }
+
+  .s-c-right-overlay img {
+    min-height: 70vh;
+    width:60vw;
+    transition: all.5s;
+  }
+
+  .residence img {
+    height: 70vh;
+  }
+
+  .residence h2 {
+    font-size: 2.8em;
+  }
+
+  .residence p {
+    width: 75%;
+  }
+
+  .schedule h2 {
+    font-size: 5em;
+    font-weight: 300;
+  }
+
+  .schedule p {
+    width: 75%;
+  }
+
+  .schedule-btn {
+
+    width: 30%;
+    height: 7vh;
+  }
+
+  .apartment-btn {
+    width: 30%;
+  }
+  
+  .ap-icon {
+    width: 100% !important;
+  }
+
+  .ap-icon h4 {
+    font-size: medium;
+  }
+
+  .apartment-head h2 {
+    font-size: 2.8em;
+  }
+
+  .plan-head h2 {
+    font-size: 3em;
+  }
+
+  .blog h2 {
+    font-size: 3em;
+  }
+
+  .blog-card-head img {
+    width: 90% !important;
+  }
+
+  .blog-card h4 {
+    width: 25vw;
+  }
+
+  .req-form {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-height: 380px) and (orientation: landscape){
+  .navbar{
+    position: static;
+  }
+  .hero-slide{
+    margin-top: 20vh;
+  }
+  .slide-btn{
+    min-height: 10vh;
+  }
+  .slide-btn button{
+    height: 7.5vh;
+  }
+  .schedule-btn {
+    height: 10.5vh;
+  }
+  .schedule-btn button{
+    height: 7.5vh;
+  }
+  .apartment-btn{
+    height: 10.5vh;
+  }
+  .apartment-btn button{
+    height: 7.5vh;
+  }
+}
+
+@media(min-width : 1024px) {
+  
+  .s-c-head h1{
+    width: 75%;
+  }
+  .slide-btn {
+    width: 25%;
+
+  }
+  .slide-btn{
+    min-height: 100%;
+  }
+  .s-c-right-main img{
+   width: 70%;
+   height: 80vh;
+}
+.s-c-right-bg img{
+  width: 70%;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+.schedule-btn{
+  width: 25%;
+}
+  .numbers .col-12 {
+    width: 40%;
+
+  }
+
+  .apartment-card img {
+    width: 100% !important;
+  }
+  .apartment-btn{
+    width: 20%;
+  }
+
+  .plan-center img {
+    width: 100%;
+  }
+
+  .facility .col-12 {
+    width: 40%;
+  }
+
+  .ap-icon {
+    width: 75% !important;
+  }
+
+  .blog-card-head img {
+    width: 80% !important;
+  }
+
+  .footer .col-12 {
+    width: 40% !important;
+  }
+
+}
+
+
+@media(min-width : 1200px) {
+  .nav-link {
+    font-size: .9em;
+  }
+
+  .numbers .col-12 {
+    width: auto;
+  }
+
+  .residence img {
+    height: 80vh;
+  }
+
+  .ap-icon {
+    height: 30vh;
+  }
+
+
+  .apartment-featuers .row {
+    width: 90%;
+  }
+
+  .ap-icon {
+    width: 100% !important;
+  }
+
+
+}
+
+@media(min-width : 1400px) {
+  .slide-btn{
+    width: 15%;
+  }
+  .s-c-right-main img{
+   width: 70%;
+   height: 80vh;
+}
+.s-c-right-bg img{
+  width: 70%;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+}
+  .s-c-right-bg img {
+    transform: translateX(0%);
+    margin-top: 10rem;
+    width: 20vw;
+    min-height: 50vh;
+   
+
+  }
+  
+  .s-c-right-overlay img {
+    width:32vw;
+    min-height: 70vh;
+    left: 2%;
+  }
+  .schedule-btn{
+  width: 15%;
+}
+  .footer .col-12 {
+    width: 25% !important;
+  }
+
+  .footer h3 {
+    font-size: 1.5em;
+  }
+
+  .footer h5 {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+
+}
